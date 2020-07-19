@@ -6,12 +6,12 @@ class Classificador:
             if x.get('status') == "0":
                 self.f_valid.append(x)
 
-
     def pontuacao(self):
         for x in self.f_valid:
             x['pontuacao'] += self.ponto_renda(x)
             x['pontuacao'] += self.ponto_idade(x)
             x['pontuacao'] += self.ponto_dependentes(x)
+
     def ponto_renda(self, fam):
         renda = fam.get('renda')
         if renda <= 900:
@@ -20,6 +20,8 @@ class Classificador:
             return 3
         elif renda <= 2000:
             return 1
+        else:
+            return 0
 
     def ponto_idade(self, fam):
         idade = fam.get('idade')
@@ -36,11 +38,10 @@ class Classificador:
             return 3
         elif dependentes > 0:
             return 2
-
+        else:
+            return 0
 
     def listagem(self):
         self.pontuacao()
-        print(self.f_valid)
         self.f_valid.sort(key=lambda k: k['pontuacao'], reverse=True)
-        print(self.f_valid)
         return self.f_valid

@@ -8,14 +8,19 @@ dados = parser.parse()
 
 lista = []
 for f in dados:
+    print(f)
     familia = Familia(f)
     renda = familia.get_renda()
     idade = familia.get_idade()
     dependentes = familia.get_dependentes()
     id = familia.id
     status = familia.status
-    lista.append({"renda": renda, "idade": idade, "dependentes": dependentes, "id": id, "status": status, "pontuacao": 0})
+    lista.append({"renda": renda, "idade": idade, "dependentes": dependentes, "id": id, "status": status, "pontuacao": 0, "criterios":0})
 
 
 classificador = Classificador.Classificador(lista)
-classificador.listagem()
+lista = classificador.listagem()
+
+
+
+print(lista)
