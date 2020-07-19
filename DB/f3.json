@@ -1,0 +1,15 @@
+{
+  "id": "3eki7da8-d742-4e51-95f9-bbb37f522413",
+  "pessoas": [
+    { "id": "5e65eea1-aa72-407e-9a67-88066c07b5de", "nome": "Joana", "tipo": "Pretendente", "dataDeNascimento": "1989-12-30" },
+    { "id": "d467781a-8f06-45ba-be6f-8788f32a9f7e", "nome": "John", "tipo": "Cônjuge", "dataDeNascimento": "1989-12-30" },
+    { "id": "79820382-a181-42d2-bfae-6g582489e65e", "nome": "Alexandre", "tipo": "Dependente", "dataDeNascimento": "2015-12-30" },
+    { "id": "80fa071e-17fb-4b87-99db-a8ui0bfc23c2", "nome": "Douglas", "tipo": "Dependente", "dataDeNascimento": "2001-12-30" },
+    { "id": "80fa071e-17fb-4b87-99db-a95b0jkc23c2", "nome": "Douglas", "tipo": "Dependente", "dataDeNascimento": "2000-12-30" }
+  ],
+  "rendas": [
+    { "pessoaId": "5e65eea1-aa72-407e-9a67-88066c07b5de", "valor": 900 },
+    { "pessoaId": "d467781a-8f06-45ba-be6f-8788f32a9f7e", "valor": 200 }
+  ],
+  "status": "0"
+}
